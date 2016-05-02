@@ -1,0 +1,104 @@
+\documentclass[11pt,english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{babel}
+\usepackage{verbatim}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{pdfpages}
+
+\PassOptionsToPackage{normalem}{ulem}
+\usepackage{ulem}
+\onehalfspacing
+%\usepackage[unicode=true,pdfusetitle,
+% bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+% breaklinks=false,pdfborder={0 0 1},backref=section,colorlinks=false]
+% {hyperref}
+\usepackage{hyperref}
+%\usepackage{breakurl}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+
+\usepackage{latexsym}
+\addtolength{\hoffset}{-0.75in}
+\addtolength{\voffset}{-0.75in}
+\addtolength{\textwidth}{1.5in}
+\addtolength{\textheight}{1.6in}
+
+%\usepackage{Sweave}
+%\include{Sweave}
+%\usepackage{listings}
+
+% === dcolumn package ===
+\usepackage{dcolumn}\newcolumntype{.}{D{.}{.}{-1}}
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+
+\usepackage{comment}
+
+% === more new math commands
+\newcommand{\X}{\mathbf{X}}
+\newcommand{\Y}{\mathbf{Y}}
+\renewcommand{\r}{\right}
+\renewcommand{\l}{\left}
+\newcommand{\dist}{\buildrel\rm d\over\sim}
+\newcommand{\ind}{\stackrel{\rm indep.}{\sim}}
+\newcommand{\ud}{\mathrm{d}}
+\newcommand{\iid}{\stackrel{\rm i.i.d.}{\sim}}
+\newcommand{\logit}{{\rm logit}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\V}{\mathbb{V}}
+\newcommand{\cJ}{\mathcal{J}}
+\newcommand{\bone}{\mathbf{1}}
+\newcommand{\var}{{\rm Var}}
+\newcommand{\cov}{{\rm Cov}}
+\newcommand{\tomega}{\tilde\omega}
+
+% === spacing
+\newcommand{\spacingset}[1]{\renewcommand{\baselinestretch}%
+{#1}\small\normalsize}
+% \spacingset{1.2}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2em}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+1)Let Z be binomial random variable so that if $Z=1$, deaths follows Poisson($\mu_1$) and if $Z=2$, deaths follows Poisson($\mu_2$).  Obviously, Z is the latent variable which we cannot observe.  First we calculate the conditional distribution $(Z|X,\theta)$:
+\begin{flalign*}
+&P(Z_i=1 | X=x_i,\theta_m) = \frac{\alpha_m \frac{\mu_{m,1}e^{-\mu_{m,1}}}{x_i!} }{ \alpha_m \frac{\mu_{m,1}e^{-\mu_{m,1}}}{x_i!} + (1-\alpha_m) \frac{\mu_{m,2}e^{-\mu_{m,2}}}{x_i!}} = z_{x_i}(\theta_m)& \\
+&P(Z_i=2 | X=x_i,\theta_m) = \frac{(1-\alpha_m) \frac{\mu_{m,2}e^{-\mu_{m,2}}}{x_i!} }{ \alpha_m \frac{\mu_{m,1}e^{-\mu_{m,1}}}{x_i!} + (1-\alpha_m) \frac{\mu_{m,2}e^{-\mu_{m,2}}}{x_i!}} = 1-  z_{x_i}(\theta_m)& \\
+\end{flalign*}
+Now, we calculate the $Q(\theta|\theta_m)$.
+\begin{flalign*}
+&Q(\theta|\theta_m) = \E_{Z|X,\theta_m} \left[ \log L(\theta;X,Z)\right] = \sum_i^n \E_{Z|X,\theta_m} \left[ \log L(\theta;x_i,z_i)\right]&\\
+&= \sum_i^n\left[P(Z_i=1 | X=x_i,\theta_m)\log L(\theta;x_i,z_i) +  P(Z_i=2 | X=x_i,\theta_m)\log L(\theta;x_i,z_i)\right]&\\
+&= \sum_i^n \left[  z_{x_i}(\theta_m)* \log(\alpha \frac{\mu_1^{x_i}e^{-\mu_1}}{x_i!}) + (1- z_{x_i}(\theta_m))*  \log((1-\alpha) \frac{\mu_2^{x_i}e^{-\mu_2}}{x_i!}) \right]&\\
+&=\sum_i^n \left[z_{x_i}(\theta_m)*(\log\alpha + x_i\log\mu_1-\mu_1 - \log x_i!) + (1-z_{x_i}(\theta_m))*(\log(1-\alpha) + x_i\log\mu_2-\mu_2 - \log x_i!) \right]&
+\end{flalign*}
+Calculate the maximum point $\theta_{m+1}$.
+\begin{flalign*}
+&\frac{\partial Q(\theta|\theta_m)}{\partial \mu_1} = \sum_i^n z_{x_i}(\theta_m)\left[ \frac{x_i}{\mu_1} -1 \right] = \sum_{i=0}^9 n_iz_i(\theta_m)\left[ \frac{i}{\mu_1} -1\right]= 0 &\\
+&\Rightarrow \mu_{m+1,1} =  \frac{\sum_{i=0}^9 z_i(\theta_m)i \theta_m}{\sum_{i=0}^9 z_i(\theta_m) \theta_m}&\\
+&\frac{\partial Q(\theta|\theta_m)}{\partial \mu_2} = \sum_i^n (1-z_{x_i}(\theta_m))\left[ \frac{x_i}{\mu_2} -1 \right] = \sum_{i=0}^9 n_i(1-z_i(\theta_m))\left[ \frac{i}{\mu_2} -1\right]= 0&\\
+&\Rightarrow \mu_{m+1,2} =  \frac{\sum_{i=0}^9 (1-z_i(\theta_m))i \theta_m}{\sum_{i=0}^9 (1-z_i(\theta_m)) \theta_m}&\\
+&\frac{\partial Q(\theta|\theta_m)}{\partial \alpha} = \sum_i^n \left[ \frac{z_{x_i}(\theta_m)}{\alpha} - \frac{1 -z_{x_i}(\theta_m) }{1-\alpha}\right] = \sum_{i=0}^9 n_i\left[ \frac{z_{i}(\theta_m)}{\alpha} - \frac{1 -z_{i}(\theta_m)}{1-\alpha}\right]=0&\\
+&\Rightarrow \alpha_{m+1}=\frac{\sum_{i=0}^9n_iz_{i}(\theta_m) }{\sum_{i=0}^9{n_i}} &
+\end{flalign*}
+Proof is finished.\\
+
+
+
+
+
+
+
+
+
+
+\end{document}
