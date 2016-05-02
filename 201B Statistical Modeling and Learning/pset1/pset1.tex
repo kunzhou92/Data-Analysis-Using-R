@@ -1,0 +1,256 @@
+\documentclass[11pt,english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{babel}
+\usepackage{verbatim}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+\PassOptionsToPackage{normalem}{ulem}
+\usepackage{ulem}
+\onehalfspacing
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=false,pdfborder={0 0 1},backref=section,colorlinks=false]
+ {hyperref}
+\usepackage{breakurl}
+\usepackage{fancyhdr}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+
+\usepackage{latexsym}
+\addtolength{\hoffset}{-0.75in}
+\addtolength{\voffset}{-0.75in}
+\addtolength{\textwidth}{1.5in}
+\addtolength{\textheight}{1.6in}
+
+\pagestyle{fancy}
+\lhead{Kun Zhou}
+\chead{HOMEWORK1}
+\rhead{UID: 204688165}
+
+%\usepackage{Sweave}
+%\include{Sweave}
+%\usepackage{listings}
+
+% === dcolumn package ===
+\usepackage{dcolumn}\newcolumntype{.}{D{.}{.}{-1}}
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+
+\usepackage{comment}
+
+% === more new math commands
+\newcommand{\X}{\mathbf{X}}
+\newcommand{\Y}{\mathbf{Y}}
+\renewcommand{\r}{\right}
+\renewcommand{\l}{\left}
+\newcommand{\dist}{\buildrel\rm d\over\sim}
+\newcommand{\ind}{\stackrel{\rm indep.}{\sim}}
+\newcommand{\ud}{\mathrm{d}}
+\newcommand{\iid}{\stackrel{\rm i.i.d.}{\sim}}
+\newcommand{\logit}{{\rm logit}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\V}{\mathbb{V}}
+\newcommand{\cJ}{\mathcal{J}}
+\newcommand{\bone}{\mathbf{1}}
+\newcommand{\var}{{\rm Var}}
+\newcommand{\cov}{{\rm Cov}}
+\newcommand{\tomega}{\tilde\omega}
+
+% === spacing
+\newcommand{\spacingset}[1]{\renewcommand{\baselinestretch}%
+{#1}\small\normalsize}
+% \spacingset{1.2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\title{\textbf{Stats 201B: Statistical Modeling and Learning}\\
+\textbf{ Problem Set 1}}
+\author{January 7, 2016}
+
+\date{Due January 14 by 11:55pm, submitted on course website.}
+\maketitle
+
+\textit{Responses should be typeset in \LaTeX, or Rmarkdown or similar.}
+
+\section*{Random Variables}
+\begin{enumerate}
+\item(2pt) Consider continuous random variable $X$ with probability distribution $p(X)$.\footnote{In problem sets we will maintain the notation used in class, in which $p(Z)$ is a density function for random variable $Z$. Note that we use $p$ instead of $f$, and that we use this for both probability density functions and probability mass functions. Further, we drop the subscript and assume that the density is for the random variable referenced in the parentheses (i.e. $f_X(X)$ is simply $p(X)$}. How is $\E[X]$ defined? (Give the definition, not the estimator you'd use given a sample).
+\begin{flalign*}
+ \E[X] & = \displaystyle\int_{-\infty}^{\infty}xp(x)dx &
+\end{flalign*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item(2pt) How is $\operatorname{Var}(X)$ defined?
+
+\begin{flalign*}
+\operatorname{Var}(X) &=  \E[X^{2}] - [\E[X]]^{2} = \displaystyle\int_{-\infty}^{\infty}x^{2}p(x)dx - \left(\displaystyle\int_{-\infty}^{\infty}xp(x)dx\right)^{2}&
+\end{flalign*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item(2pt) Further suppose $Y$ is a continuous variable as well, and you have joint density $p(X,Y)$. How is $\E[Y|X]$ defined? (Write it out in terms of an integral and density function).
+\begin{flalign*}
+\E[Y|X=x] & = \int yp(y|x)dy = \int y\frac{p(x,y)}{p(x)}dy =  \int y\frac{p(x,y)}{\int p(x, y) dy}dy = \frac{\int yp(x, y)dy}{\int p(x, y)dy}&
+\end{flalign*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item(2pt) If $X$ and $Y$ were independent, what is the relationship between $p(X,Y)$, $p(X)$, and $p(Y)$?  What does $\E[X|Y]$ reduced to when $X$ and $Y$ are independent (show why this is, writing out the definition of $\E[Y|X]$ first).
+\begin{flalign*}
+& p(X, Y) = p(X)p(Y) &\\
+& \E[Y|X=x] = \frac{\int yp(x, y)dy}{\int p(x, y)dy} = \frac{\int yp(x)p(y)dy}{\int p(x)p(y)dy} = \frac{p(x)\int yp(y)dy}{p(x)\int p(y)dy} =  \frac{\int yp(y)dy}{\int p(y)dy} = \int yp(y)dy & \\
+& = \E[Y]&
+\end{flalign*}
+\end{enumerate}
+
+\textit{For the following questions, draw random variables $X_1$, $X_2$,..., $X_N$, all independently from common density $p(X)$.}
+
+\begin{enumerate}
+\setcounter{enumi}{4}
+\item(2pt) Suppose you have scalars, $a,\,b,\,c$.  What is $\E[aX_1+bX_2+cX_3]$ equal to (in terms of $\E[X]$)? What is $\operatorname{Var}[aX_1+bX_2+cX_3]$?
+\begin{flalign*}
+\E[aX_{1} + bX_{2} + cX_{3}]& = \E[aX_{1}] + \E[bX_{2}] + \E[cX_{3}] = a\E[X_{1}] + b\E[X_{2}] + c\E[X_{3}] &\\
+&= (a+b+c)\E[X]& \\
+\operatorname{Var}[aX_{1} + bX_{2} + cX_{3}] & = \operatorname{Var}[aX_{1}] + \operatorname{Var}[bX_{2}] + \operatorname{Var}[cX_{3}] &\\
+&= a^{2}\operatorname{Var}[X_{1}] + b^{2}\operatorname{Var}[X_{2}] + c^{2}\operatorname{Var}[X_{3}]&\\
+& = (a^{2}+b^{2}+c^{2})\operatorname{Var}[X]
+\end{flalign*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\item(3pt) Let $\overline{X} = \displaystyle{\frac{1}{N} \sum_i^{N}} X_i$. Is $\overline{X}$ unbiased for $\E[X]$? Prove it. (Do not just cite a theorem!)
+\\ Yes.
+\begin{flalign*}
+\E[\overline{X}] &= \E[\displaystyle \sum_{i=1}^{N}\frac{1}{N}X_{i}] & \\
+& = \displaystyle \sum_{i=1}^{N}\frac{1}{N}\E[X] \qquad \text{according to 5.}& \\
+& = \E[X] &
+\end{flalign*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\item(3pt) Derive the variance of $\overline{X}$. What happens to it as $N \rightarrow \infty$?
+\begin{flalign*}
+\operatorname{Var}[\overline{X}] & = \operatorname{Var} [\displaystyle \sum_{i=1}^{N}\frac{1}{N}X_{i}] & \\
+& =  \displaystyle \sum_{i=1}^{N}\frac{1}{N^{2}}\operatorname{Var}[X]& \\
+& = \frac{1}{N}\operatorname{Var}[X]
+\end{flalign*}
+\begin{flalign*}
+\displaystyle \lim_{N \rightarrow \infty}\operatorname{Var}[\overline{X}] &=  \displaystyle \lim_{N \rightarrow \infty}\frac{1}{N}\operatorname{Var}[X] = 0&
+\end{flalign*}
+
+\end{enumerate}
+
+\section*{Matrix Algebra,OLS, and \texttt{R} Practice}
+Consider random variables $Y\in \mathbb{R}$ and $X \in \mathbb{R^{P}}$, drawn from joint density $p(X,Y)$. You collect a sample of draws from this distribution, $\{(Y_1,X_1),...,(Y_N,X_N)\}$.
+
+Let $\X$ be a $N \times (1+P)$ matrix, with row $i$ equal to $[1\,\, X_i^{\top}]$ (i.e., there is an intercept and then a column for each ``covariate''). Consider an OLS model, $Y=\X\beta +\epsilon$, where $E[\epsilon|X]=0$ by assumption.
+
+\begin{enumerate}
+\setcounter{enumi}{7}
+\item(5pt)  Using matrix notation at each step, derive the ordinary least squares estimator for $\beta$:
+$$\beta_{OLS} = \underset{\beta \in \mathbb{R}^{P+1}}{argmin} (\Y-\X\beta)^{\top}(\Y-\X\beta)$$
+\begin{flalign*}
+& \operatorname{f}(\beta) = (\Y-\X\beta)^{\top}(\Y-\X\beta) & \\
+& \text{To get the minimum value of }\operatorname{f}(\beta) \text{, we let }\frac{\partial f(\beta)}{\partial \beta} = 0\text{.} \\
+& \Rightarrow \frac{\partial f(\beta)}{\partial \beta} = -2\X^{\top}\Y +2\X^{\top}\X \beta = 0 & \\
+& \Rightarrow \hat{\beta}_{OLS} = (\X^{\top}\X)^{-1}(\X^{\top}\Y)
+\end{flalign*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\item(4pt)  Show \texttt{R} code that would achieve the following (there is no need to submit this code in a separate file; just include it in your problem set write-up using an environment such as $\texttt{verbatim}$):
+\begin{itemize}
+\item[a.] Construct a matrix $X$ to represent $\X$ in the above, with $N=100$, one column of ones, and two columns of randomly drawn numbers (from any distribution you like).
+\begin{verbatim}
+X = cbind(rep(1, 100), matrix(rnorm(200, 0, 1), ncol = 2))
+\end{verbatim}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item[b.]  Using $\beta=[1\,\,2\,\,3]^{\top}$, compute vector $Y$ equal to $X\beta + \epsilon$, where $\epsilon$ is drawn from a standard normal distribution.
+\begin{verbatim}
+epsilon = matrix(rnorm(100, 0, 1), ncol = 1)
+beta = matrix(1:3, ncol = 1)
+Y = X %*% beta + epsilon
+\end{verbatim}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item[c.] Compute $\hat{\beta}_{OLS}=(X^{\top}X)^{-1}(X^{\top}Y)$.
+\begin{verbatim}
+beta_ols = solve(t(X) %*% X) %*% (t(X) %*% Y)
+> beta_ols
+         [,1]
+[1,] 1.035916
+[2,] 2.071113
+[3,] 2.938582
+\end{verbatim}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item[d.] Compare the result to the coefficients obtained using \texttt{lm} with the data you have constructed.
+\end{itemize}
+\begin{verbatim}
+lm_ols = lm(Y~X[,1]+X[,2]+X[,3]-1)
+summary(lm_ols)
+> summary(lm_ols)
+
+Call:
+lm(formula = Y ~ X[, 1] + X[, 2] + X[, 3] - 1)
+
+Residuals:
+    Min      1Q  Median      3Q     Max
+-2.0532 -0.6210 -0.1071  0.6383  2.5732
+
+Coefficients:
+       Estimate Std. Error t value Pr(>|t|)
+X[, 1]   1.0359     0.1036   10.00   <2e-16 ***
+X[, 2]   2.0711     0.0977   21.20   <2e-16 ***
+X[, 3]   2.9386     0.1060   27.72   <2e-16 ***
+---
+
+Residual standard error: 1.034 on 97 degrees of freedom
+Multiple R-squared:  0.9319,	Adjusted R-squared:  0.9298
+F-statistic: 442.8 on 3 and 97 DF,  p-value: < 2.2e-16
+\end{verbatim}
+The results in (c) and (d) are the same.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\item(4pt) Show (analytically) the unbiasedness of $\hat{\beta}_{OLS}$ for $\beta$. (Hint: compute $\hat{\beta}_{OLS}$, but replacing $Y$ with $\X\beta+\epsilon$).
+
+\begin{flalign*}
+\E[\hat{\beta}_{OLS}] &= \E\left[(\X^{\top} \X)^{-1}(\X^{\top}\Y)\right] = (\X^{\top} \X)^{-1}(\X^{\top}\E[\Y]) &\\
+& = (\X^{\top} \X)^{-1}(\X^{\top}\E[\X \beta + \epsilon]) = (\X^{\top} \X)^{-1}(\X^{\top}\X \beta ) \qquad \text{since } \E[\epsilon] = 0&\\
+& = \beta
+\end{flalign*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item(4pt) Compute the variance, $\E[(\hat{\beta}_{OLS}-\beta)(\hat{\beta}_{OLS}-\beta)^{\top}]$, again sticking with matrix notation. You may assume $\E[\epsilon \epsilon^{\top}|X]=\sigma^2 I_N$, where $I_N$ is the $N \times N$ identity matrix.
+
+\begin{flalign*}
+\E[(\hat{\beta}_{OLS}-\beta)(\hat{\beta}_{OLS}-\beta)^{\top}] & = \E\left[(\hat{\beta}_{OLS}-\E[\hat{\beta}_{OLS}])(\hat{\beta}_{OLS}-\E[\hat{\beta}_{OLS}])^{\top}\right]  = \operatorname{Var}[\hat{\beta}_{OLS}]& \\
+& = \operatorname{Var}[(\X^{\top} \X)^{-1}(\X^{\top}\Y)] = (\X^{\top} \X)^{-1} \X^{\top} \operatorname{Var}(\Y) \X (\X^{\top} \X)^{-1} & \\
+& = (\X^{\top} \X)^{-1} \X^{\top} \operatorname{Var}(\X\beta + \epsilon) \X (\X^{\top} \X)^{-1}  &\\
+&=(\X^{\top} \X)^{-1} \X^{\top} \operatorname{Var}( \epsilon) \X (\X^{\top} \X)^{-1} & \\
+& = (\X^{\top} \X)^{-1} \X^{\top} \sigma^2 I_N \X (\X^{\top} \X)^{-1}&\\
+&= \sigma^2(\X^{\top} \X)^{-1}
+\end{flalign*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\item(2pt) What meaning would you give to the matrix $\E[\epsilon \epsilon^{\top}|X]$? Give an intuitive explanation of what the assumption that this matrix equals $\sigma^2 I$ implies.
+
+Covariance matrix of random errors.  Random errors consist of unknown factors, uncontrolled factors, measurement errors and so on.  The total effect of these factors may be either positive or negative, but in large number of trials, they have the same variation and don't affect each other.
+
+
+
+\end{enumerate}
+\end{document}
