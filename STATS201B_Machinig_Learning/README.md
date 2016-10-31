@@ -1,3 +1,9 @@
-# Data Analysis Using R
+# Application of Kernel on German Credit
 
-Contain homework and projects finished in STATS courses using R. Each folder contains detailed description.
+- Compared the credit classification performance between Kernel Logistic Regression and Support Vector Machine for categorical variables. 
+- Compared the credit-amount prediction performance between Kernel Ridge Regression and Robust Regularized Kernel Regression for continuous variables.
+- Applied cross validation to select best model for each method in regards to *labmda*.  
+- Used the German credit data set which is available in the UCI. There were totally 1000 observations (700 good credits, 300 bad credits).
+- Summarized the confusion matrix and graphs about fitted value against original value.
+
+Report is in **final_report.pdf**. **R_code** folder contains all codes implemented in the project.
