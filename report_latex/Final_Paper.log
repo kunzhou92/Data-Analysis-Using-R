@@ -1,0 +1,467 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.13)  17 MAR 2016 23:40
+entering extended mode
+**E:/Papers/Statistics/201B*Statistical*Modeling*and*Learning/project/Final_Pap
+er/Final_Paper.tex
+
+("E:/Papers/Statistics/201B Statistical Modeling and Learning/project/Final_Pap
+er/Final_Paper.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+(E:\Tools\CTEX\MiKTeX\tex\latex\base\article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(E:\Tools\CTEX\MiKTeX\tex\latex\base\size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(E:\Tools\CTEX\MiKTeX\tex\latex\geometry\geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(E:\Tools\CTEX\MiKTeX\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(E:\Tools\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(E:\Tools\CTEX\MiKTeX\tex\generic\oberdiek\ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(E:\Tools\CTEX\MiKTeX\tex\generic\ifxetex\ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+
+(E:\Tools\CTEX\MiKTeX\tex\latex\geometry\geometry.cfg))
+(E:\Tools\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(E:\Tools\CTEX\MiKTeX\tex\latex\graphics\graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(E:\Tools\CTEX\MiKTeX\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(E:\Tools\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(E:\Tools\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(E:\Tools\CTEX\MiKTeX\tex\generic\oberdiek\infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(E:\Tools\CTEX\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count90
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+(E:\Tools\CTEX\MiKTeX\tex\latex\amsfonts\amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(E:\Tools\CTEX\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(E:\Tools\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(E:\Tools\CTEX\MiKTeX\tex\latex\ams\math\amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(E:\Tools\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen113
+))
+(E:\Tools\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen114
+)
+(E:\Tools\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen115
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip10
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks18
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks19
+\eqnshift@=\dimen116
+\alignsep@=\dimen117
+\tagshift@=\dimen118
+\tagwidth@=\dimen119
+\totwidth@=\dimen120
+\lineht@=\dimen121
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(E:\Tools\CTEX\MiKTeX\tex\latex\caption\caption.sty
+Package: caption 2011/11/10 v3.2e Customizing captions (AR)
+
+(E:\Tools\CTEX\MiKTeX\tex\latex\caption\caption3.sty
+Package: caption3 2011/11/01 v1.4a caption3 kernel (AR)
+\captionmargin=\dimen122
+\captionmargin@=\dimen123
+\captionwidth=\dimen124
+\caption@indent=\dimen125
+\caption@parindent=\dimen126
+\caption@hangindent=\dimen127
+)
+\c@ContinuedFloat=\count103
+)
+(E:\Tools\CTEX\MiKTeX\tex\latex\caption\subcaption.sty
+Package: subcaption 2011/10/30 v1.1c Sub-captions (AR)
+\c@subfigure=\count104
+\c@subtable=\count105
+)
+(E:\Tools\CTEX\MiKTeX\tex\latex\float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count106
+\float@exts=\toks22
+\float@box=\box28
+\@float@everytoks=\toks23
+\@floatcapt=\box29
+)
+("E:\Papers\Statistics\201B Statistical Modeling and Learning\project\Final_Pap
+er\Final_Paper.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(76.82234pt, 460.65031pt, 76.82234pt)
+* v-part:(T,H,B)=(76.82234pt, 641.3253pt, 76.82234pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=460.65031pt
+* \textheight=641.3253pt
+* \oddsidemargin=4.55235pt
+* \evensidemargin=4.55235pt
+* \topmargin=-32.44765pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(E:\Tools\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count107
+\scratchdimen=\dimen128
+\scratchbox=\box30
+\nofMPsegments=\count108
+\nofMParguments=\count109
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count110
+\MPscratchDim=\dimen129
+\MPnumerator=\count111
+\makeMPintoPDFobject=\count112
+\everyMPtoPDFconversion=\toks25
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for U+msa on input line 22.
+ (E:\Tools\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 22.
+
+(E:\Tools\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+) [1
+
+{E:/Tools/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}] [2] [
+3]
+<lambda_20.jpeg, id=22, 521.95pt x 348.30125pt>
+File: lambda_20.jpeg Graphic file (type jpg)
+ <use lambda_20.jpeg>
+Package pdftex.def Info: lambda_20.jpeg used on input line 138.
+(pdftex.def)             Requested size: 218.81133pt x 128.03503pt.
+
+<klr_20_best.png, id=23, 207.77625pt x 158.5925pt>
+File: klr_20_best.png Graphic file (type png)
+ <use klr_20_best.png>
+Package pdftex.def Info: klr_20_best.png used on input line 144.
+(pdftex.def)             Requested size: 218.82141pt x 128.0478pt.
+
+<svm_20.png, id=25, 197.73875pt x 173.64874pt>
+File: svm_20.png Graphic file (type png)
+ <use svm_20.png>
+Package pdftex.def Info: svm_20.png used on input line 150.
+(pdftex.def)             Requested size: 218.81372pt x 128.04231pt.
+
+<klr_20.png, id=26, 194.7275pt x 170.6375pt>
+File: klr_20.png Graphic file (type png)
+ <use klr_20.png>
+Package pdftex.def Info: klr_20.png used on input line 156.
+(pdftex.def)             Requested size: 218.81828pt x 128.04549pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
+
+ []
+
+[4 <E:/Papers/Statistics/201B Statistical Modeling and Learning/project/Final_P
+aper/lambda_20.jpeg> <E:/Papers/Statistics/201B Statistical Modeling and Learni
+ng/project/Final_Paper/klr_20_best.png> <E:/Papers/Statistics/201B Statistical 
+Modeling and Learning/project/Final_Paper/svm_20.png> <E:/Papers/Statistics/201
+B Statistical Modeling and Learning/project/Final_Paper/klr_20.png>]
+<lambda_15.jpeg, id=33, 521.95pt x 348.30125pt>
+File: lambda_15.jpeg Graphic file (type jpg)
+ <use lambda_15.jpeg>
+Package pdftex.def Info: lambda_15.jpeg used on input line 169.
+(pdftex.def)             Requested size: 218.81133pt x 128.03503pt.
+
+<klr_15_best.png, id=34, 208.78pt x 155.58125pt>
+File: klr_15_best.png Graphic file (type png)
+ <use klr_15_best.png>
+Package pdftex.def Info: klr_15_best.png used on input line 175.
+(pdftex.def)             Requested size: 218.82404pt x 128.03798pt.
+
+<svm_15.png, id=35, 191.71625pt x 185.69376pt>
+File: svm_15.png Graphic file (type png)
+ <use svm_15.png>
+Package pdftex.def Info: svm_15.png used on input line 181.
+(pdftex.def)             Requested size: 218.825pt x 128.04099pt.
+
+<klr_15.png, id=36, 194.7275pt x 174.6525pt>
+File: klr_15.png Graphic file (type png)
+ <use klr_15.png>
+Package pdftex.def Info: klr_15.png used on input line 187.
+(pdftex.def)             Requested size: 218.81828pt x 128.04424pt.
+
+<lambda_10.jpeg, id=37, 521.95pt x 348.30125pt>
+File: lambda_10.jpeg Graphic file (type jpg)
+ <use lambda_10.jpeg>
+Package pdftex.def Info: lambda_10.jpeg used on input line 196.
+(pdftex.def)             Requested size: 218.81133pt x 128.03503pt.
+
+<klr_10_best.png, id=38, 203.76125pt x 157.58875pt>
+File: klr_10_best.png Graphic file (type png)
+ <use klr_10_best.png>
+Package pdftex.def Info: klr_10_best.png used on input line 202.
+(pdftex.def)             Requested size: 218.82143pt x 128.04533pt.
+
+<svm_10.png, id=39, 202.7575pt x 180.675pt>
+File: svm_10.png Graphic file (type png)
+ <use svm_10.png>
+Package pdftex.def Info: svm_10.png used on input line 208.
+(pdftex.def)             Requested size: 218.81705pt x 128.03752pt.
+
+<klr_10.png, id=40, 204.765pt x 180.675pt>
+File: klr_10.png Graphic file (type png)
+ <use klr_10.png>
+Package pdftex.def Info: klr_10.png used on input line 214.
+(pdftex.def)             Requested size: 218.82454pt x 128.03752pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5 <E:/Papers/Statistics/201B Statistical Modeling and Learning/project/Final_P
+aper/lambda_15.jpeg> <E:/Papers/Statistics/201B Statistical Modeling and Learni
+ng/project/Final_Paper/klr_15_best.png> <E:/Papers/Statistics/201B Statistical 
+Modeling and Learning/project/Final_Paper/svm_15.png> <E:/Papers/Statistics/201
+B Statistical Modeling and Learning/project/Final_Paper/klr_15.png>]
+<svm_20_w.png, id=47, 176.66pt x 170.6375pt>
+File: svm_20_w.png Graphic file (type png)
+ <use svm_20_w.png>
+Package pdftex.def Info: svm_20_w.png used on input line 230.
+(pdftex.def)             Requested size: 156.491pt x 142.27219pt.
+ [6 <E:/Papers/Statistics/201B Statistical Modeling and Learning/project/Final_
+Paper/lambda_10.jpeg> <E:/Papers/Statistics/201B Statistical Modeling and Learn
+ing/project/Final_Paper/klr_10_best.png> <E:/Papers/Statistics/201B Statistical
+ Modeling and Learning/project/Final_Paper/svm_10.png> <E:/Papers/Statistics/20
+1B Statistical Modeling and Learning/project/Final_Paper/klr_10.png> <E:/Papers
+/Statistics/201B Statistical Modeling and Learning/project/Final_Paper/svm_20_w
+.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 248--250
+
+ []
+
+<huber_loss.pdf, id=55, 614.295pt x 794.97pt>
+File: huber_loss.pdf Graphic file (type pdf)
+ <use huber_loss.pdf>
+Package pdftex.def Info: huber_loss.pdf used on input line 267.
+(pdftex.def)             Requested size: 218.81206pt x 128.03477pt.
+
+<density_15.pdf, id=56, 614.295pt x 794.97pt>
+File: density_15.pdf Graphic file (type pdf)
+ <use density_15.pdf>
+Package pdftex.def Info: density_15.pdf used on input line 273.
+(pdftex.def)             Requested size: 218.81206pt x 128.03477pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--278
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7] [8 <E:/Papers/Statistics/201B Statistical Modeling and Learning/project/Fin
+al_Paper/huber_loss.pdf> <E:/Papers/Statistics/201B Statistical Modeling and Le
+arning/project/Final_Paper/density_15.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 324--325
+
+ []
+
+<krr_15_cv.pdf, id=77, 614.295pt x 794.97pt>
+File: krr_15_cv.pdf Graphic file (type pdf)
+ <use krr_15_cv.pdf>
+Package pdftex.def Info: krr_15_cv.pdf used on input line 331.
+(pdftex.def)             Requested size: 218.81206pt x 128.03477pt.
+
+<rrkr_15_cv.pdf, id=78, 614.295pt x 794.97pt>
+File: rrkr_15_cv.pdf Graphic file (type pdf)
+ <use rrkr_15_cv.pdf>
+Package pdftex.def Info: rrkr_15_cv.pdf used on input line 337.
+(pdftex.def)             Requested size: 218.81206pt x 128.03477pt.
+
+<krr_15.pdf, id=79, 614.295pt x 794.97pt>
+File: krr_15.pdf Graphic file (type pdf)
+ <use krr_15.pdf>
+Package pdftex.def Info: krr_15.pdf used on input line 347.
+(pdftex.def)             Requested size: 218.81206pt x 128.03477pt.
+
+<rrkr_15.pdf, id=80, 614.295pt x 794.97pt>
+File: rrkr_15.pdf Graphic file (type pdf)
+ <use rrkr_15.pdf>
+Package pdftex.def Info: rrkr_15.pdf used on input line 353.
+(pdftex.def)             Requested size: 218.81206pt x 128.03477pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<krr_10.pdf, id=81, 614.295pt x 794.97pt>
+File: krr_10.pdf Graphic file (type pdf)
+ <use krr_10.pdf>
+Package pdftex.def Info: krr_10.pdf used on input line 364.
+(pdftex.def)             Requested size: 218.81206pt x 128.03477pt.
+
+<rrkr_10.pdf, id=82, 614.295pt x 794.97pt>
+File: rrkr_10.pdf Graphic file (type pdf)
+ <use rrkr_10.pdf>
+Package pdftex.def Info: rrkr_10.pdf used on input line 370.
+(pdftex.def)             Requested size: 218.81206pt x 128.03477pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9 <E:/Papers/Statistics/201B Statistical Modeling and Learning/project/Final_P
+aper/krr_15_cv.pdf> <E:/Papers/Statistics/201B Statistical Modeling and Learnin
+g/project/Final_Paper/rrkr_15_cv.pdf>] [10 <E:/Papers/Statistics/201B Statistic
+al Modeling and Learning/project/Final_Paper/krr_15.pdf> <E:/Papers/Statistics/
+201B Statistical Modeling and Learning/project/Final_Paper/rrkr_15.pdf> <E:/Pap
+ers/Statistics/201B Statistical Modeling and Learning/project/Final_Paper/krr_1
+0.pdf> <E:/Papers/Statistics/201B Statistical Modeling and Learning/project/Fin
+al_Paper/rrkr_10.pdf>] [11]
+("E:\Papers\Statistics\201B Statistical Modeling and Learning\project\Final_Pap
+er\Final_Paper.aux") ) 
+Here is how much of TeX's memory you used:
+ 3779 strings out of 495354
+ 53786 string characters out of 3183523
+ 119024 words of memory out of 3000000
+ 6899 multiletter control sequences out of 15000+200000
+ 13358 words of font info for 52 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 36i,17n,38p,1113b,478s stack positions out of 5000i,500n,10000p,200000b,50000s
+<E:/Tools/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx
+12.pfb><E:/Tools/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/Tool
+s/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/Tools/CTEX/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmmi6.pfb><E:/Tools/CTEX/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmmi8.pfb><E:/Tools/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+r10.pfb><E:/Tools/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Tool
+s/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/Tools/CTEX/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><E:/Tools/CTEX/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmsy6.pfb><E:/Tools/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cms
+y8.pfb><E:/Tools/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Final_Paper.pdf (11 pages, 538517 bytes).
+PDF statistics:
+ 164 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+
