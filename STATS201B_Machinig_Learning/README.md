@@ -6,4 +6,4 @@
 - Used the German credit data set which is available in the UCI. There were totally 1000 observations (700 good credits, 300 bad credits).
 - Summarized the confusion matrix and graphs about fitted value against original value.
 
-Report is in **final_report.pdf**. **R_code** folder contains all codes implemented in the project.
+Report is in file **final_report.pdf**. Folder **R_code** contains all codes implemented in the project.
